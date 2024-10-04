@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員專區 - 電腦工仿</title>
+    <link rel="stylesheet" href="style.css"> <!-- 這裡可以加入你的CSS -->
+</head>
+<body>
+    <header>
+        <h1>會員專區</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">回到首頁</a></li>
+                <li><a href="latest-news.html">最新消息</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="store-locations.html">門市據點</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>登入會員</h2>
+            <form action="member-login.php" method="POST">
+                <label for="username">使用者名稱：</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">密碼：</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">登入</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>註冊新會員</h2>
+            <form action="member-register.php" method="POST">
+                <label for="new-username">使用者名稱：</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <br>
+                <label for="new-password">密碼：</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <br>
+                <button type="submit">註冊</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright 2024 電腦工仿. 保留所有權利.</p>
+    </footer>
+</body>
+</html>
